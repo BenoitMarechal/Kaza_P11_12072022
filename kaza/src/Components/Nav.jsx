@@ -11,6 +11,9 @@ const Nav = () => {
 				<li>
 					<NavLink to='/about'>A propos</NavLink>
 				</li>
+				<li>
+					<NavLink to='/kjhkjh'>404</NavLink>
+				</li>
 			</ul>
 		</nav>
 	);

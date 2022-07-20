@@ -3,6 +3,8 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	height: $header-height;
+	margin: $body-top $body-sides 0px $body-sides;
 
 	// &__logo {
 	// }
