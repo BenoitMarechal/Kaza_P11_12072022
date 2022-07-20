@@ -1,0 +1,17 @@
+.footer {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 40px 0px;
+
+	&__logo {
+		width: 200px;
+		height: 68px;
+	}
+	&__text {
+		margin: 0;
+	}
+}
