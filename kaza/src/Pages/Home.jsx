@@ -5,10 +5,9 @@ import data from '../assets/logements.json';
 
 const Home = () => {
 	return (
-		<div>
-			<h1>HOME</h1>
+		<div className='page'>
 			<Header />
-
+			<h1>Home</h1>
 			{data &&
 				data.map((elt) => {
 					return <div key={elt.id}>{elt.title}</div>;

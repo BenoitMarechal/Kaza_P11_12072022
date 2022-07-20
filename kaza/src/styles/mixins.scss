@@ -1,0 +1,27 @@
+@mixin prim-on-sec {
+	color: $colour-primary;
+	background-color: $colour-secondary;
+}
+
+.prim-on-sec {
+	@include prim-on-sec();
+}
+
+@mixin sec-on-prim {
+	color: $colour-secondary;
+	background-color: $colour-primary;
+}
+
+.sec-on-prim {
+	@include sec-on-prim();
+}
+
+@mixin prim-on-sec {
+	color: $colour-primary;
+	background-color: $colour-secondary;
+}
+
+.white-on-black {
+	color: white;
+	background-color: black;
+}

@@ -1,0 +1,21 @@
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	// &__logo {
+	// }
+
+	&__nav {
+		&__ul {
+			display: flex;
+			//pour li, voir dans index.scss
+		}
+	}
+	//pour Link, voir dans index.scss
+}
+
+.active {
+	text-decoration: underline;
+}

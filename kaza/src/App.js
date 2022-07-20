@@ -1,9 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import Error from './Pages/Error';
-import { useState, useEffect } from 'react';
+import About from './Pages/About';
+//import { useState, useEffect } from 'react';
 
-const dataUrl = './assets/logements.json';
+//const dataUrl = './assets/logements.json';
 
 // useEffect(() => {
 // 	fetch(dataUrl)
@@ -35,13 +36,14 @@ const App = () => {
 	// useEffect(() => {
 	//getData();
 	// }, []);
-//ajouter "A propos"
+	//ajouter "A propos"
 	return (
 		<BrowserRouter>
 			<Routes>
 				<Route path='/' element={<Home />} />
-				<Route path='/error' element={<Error />} />				
+				<Route path='/error' element={<Error />} />
 				<Route path='*' element={<Error />} />
+				<Route path='/about' element={<About />} />
 			</Routes>
 		</BrowserRouter>
 	);
