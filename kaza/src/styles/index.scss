@@ -10,13 +10,13 @@
 @import './header';
 @import './footer.scss';
 @import './error.scss';
-
+@import './landingPic.scss';
+@import './about.scss';
 // body {
 // 	//display: flex;
 // 	width: 100%;
 // 	height: 100%;
 // }
-
 body {
 	position: absolute;
 	top: 0;
@@ -26,19 +26,22 @@ body {
 	margin: 0;
 	//padding: $body-top 0 $body-bottom 0;
 }
-.page {
-	// display: flex;
-	// flex-direction: column;
-}
+// .page {
+// 	// display: flex;
+// 	// flex-direction: column;
+// }
 
 .container {
-	position: absolute;
-	top: $header-height + $body-top;
-	bottom: $footer-height;
-	margin: 0px $body-sides 0px $body-sides;
-	left: 0;
-	right: 0;
-	//width: 100%;
+	//top: $header-height + $body-top;
+	//bottom: $footer-height;
+	//margin: 0px $body-sides 0px $body-sides;
+	margin-left: $body-sides;
+	margin-right: $body-sides;
+	//left: 0;
+	//right: 0;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
 }
 
 #root {

@@ -6,10 +6,16 @@
 	height: $header-height;
 	margin: $body-top $body-sides 0px $body-sides;
 
-	// &__logo {
-	// }
+	&__logo {
+		height: 100%;
+		margin: 0;
+		display: flex;
+		align-items: center;
+	}
 
 	&__nav {
+		display: flex;
+		align-items: center;
 		&__ul {
 			display: flex;
 			//pour li, voir dans index.scss
