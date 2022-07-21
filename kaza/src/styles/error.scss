@@ -1,5 +1,6 @@
 .error {
 	margin-top: -50px;
+	@include prim-on-sec;
 	&__h1 {
 		font-style: normal;
 		font-weight: 700;
