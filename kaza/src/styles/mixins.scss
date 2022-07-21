@@ -21,6 +21,11 @@
 	background-color: $colour-secondary;
 }
 
+@mixin prim-on-grey {
+	color: $colour-primary;
+	background-color: $background-grey;
+}
+
 .white-on-black {
 	color: white;
 	background-color: black;

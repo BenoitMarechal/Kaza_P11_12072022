@@ -22,7 +22,7 @@ const DropDown = (props) => {
 	}
 
 	return (
-		<div className={'dropdown sec-on-prim'}>
+		<div className={'dropdown'}>
 			<div className='dropdown__title' onClick={handleClick}>
 				<div className={'dropdown__title__title'}>{props.title}</div>
 				<div

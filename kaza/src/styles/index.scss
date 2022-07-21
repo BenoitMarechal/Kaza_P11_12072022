@@ -26,12 +26,18 @@ body {
 	margin: 0;
 	//padding: $body-top 0 $body-bottom 0;
 }
-// .page {
-// 	// display: flex;
-// 	// flex-direction: column;
-// }
+.page {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	//border: 1px solid green;
+}
 
 .container {
+	//border: 1px solid orange;
+	//position: absolute;
+	//position: relative;
 	//top: $header-height + $body-top;
 	//bottom: $footer-height;
 	//margin: 0px $body-sides 0px $body-sides;
@@ -39,6 +45,7 @@ body {
 	margin-right: $body-sides;
 	//left: 0;
 	//right: 0;
+	height: 100%;
 	flex-direction: column;
 	display: flex;
 	align-items: center;

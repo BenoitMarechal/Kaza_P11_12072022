@@ -1,16 +1,49 @@
 .dropdown {
-	border: 1px solid black;
+	//border: 1px solid black;
 	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+	//border-radius: 5px;
 	&__title {
+		position: relative;
+		z-index: 2;
+		@include sec-on-prim;
+		border-radius: 5px;
+		height: $dropdown-title-height;
 		display: flex;
+		align-items: center;
 		justify-content: space-between;
+		//border: 1px solid green;
+		//margin-bottom: -10px;
+
 		&__title {
+			margin-left: $dropdown-margin;
+			font-family: 'Montserrat';
+			font-weight: 500;
+			font-size: 24px;
 		}
 		&__arrow {
+			margin-right: $dropdown-margin;
 		}
 	}
 	&__pannel {
-		border: 1px solid blue;
+		position: relative;
+		z-index: 1;
+		@include prim-on-grey;
+		margin-top: -5px;
+		padding-top: 15px;
+		padding-left: $dropdown-margin;
+		padding-right: $dropdown-margin;
+		//margin-top: 0px;
+		//padding-top: 30px;
+		//border: 1px solid blue;
+		font-family: 'Montserrat';
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 142.6%;
+		text-justify: distribute;
+		//position: relative;
+		//top: 10px;
 	}
 }
 
