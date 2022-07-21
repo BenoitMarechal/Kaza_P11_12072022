@@ -18,10 +18,13 @@
 		align-items: center;
 		&__ul {
 			display: flex;
-			//pour li, voir dans index.scss
+
+			&__li {
+				//pour li, voir dans index.scss
+				margin-left: 100px;
+			}
 		}
 	}
-	//pour Link, voir dans index.scss
 }
 
 .active {

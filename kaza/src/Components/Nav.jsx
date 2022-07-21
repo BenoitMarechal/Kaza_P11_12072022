@@ -5,13 +5,13 @@ const Nav = () => {
 	return (
 		<nav className='header__nav'>
 			<ul className='header__nav__ul'>
-				<li>
+				<li className='header__nav__ul__li'>
 					<NavLink to='/'>Accueil</NavLink>
 				</li>
-				<li>
+				<li className='header__nav__ul__li'>
 					<NavLink to='/about'>A propos</NavLink>
 				</li>
-				<li>
+				<li className='header__nav__ul__li'>
 					<NavLink to='/kjhkjh'>404</NavLink>
 				</li>
 			</ul>
