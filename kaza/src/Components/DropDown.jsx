@@ -4,15 +4,22 @@ import { useState } from 'react';
 import arrow from '../assets/Dropdown__arrow_desktop.png';
 
 const DropDown = (props) => {
-	const [display, setDisplay] = useState('none');
-	// const [class, setClass] = useState('up');
+	function formatData(data) {
+		if (typeof data === 'string') {
+			return [data];
+		} else {
+			return data;
+		}
+	}
 
+	//console.log(formatData(props.content));
+
+	const [display, setDisplay] = useState('none');
 	const [isActive, setActive] = useState('false');
 
 	function handleClick() {
 		setActive(!isActive);
-		console.log('click');
-		console.log(props);
+		//console.log('click');
 
 		if (display === 'none') {
 			setDisplay('block');
@@ -33,7 +40,9 @@ const DropDown = (props) => {
 				</div>
 			</div>
 			<div className='dropdown__pannel' style={{ display: display }}>
-				{props.content}
+				{formatData(props.content).map((line) => {
+					return <p key={formatData(props.content).indexOf(line)}>{line}</p>;
+				})}
 			</div>
 		</div>
 	);

@@ -4,11 +4,11 @@ import Header from '../Components/Header';
 import data from '../assets/logements.json';
 import Carroussel from '../Components/Carroussel';
 import ErrorComponent from '../Components/ErrorComponent';
+import Description from '../Components/Description';
 
 const Logding = () => {
 	let pageId = new URLSearchParams(window.location.search).get('id');
 	const found = data.find((element) => element.id === pageId);
-	console.log(found);
 
 	return (
 		<div className='page'>
@@ -16,6 +16,7 @@ const Logding = () => {
 			{found ? (
 				<div className='lodging container'>
 					{found.pictures ? <Carroussel {...found} /> : <h2>pas de photos</h2>}
+					<Description {...found} />
 				</div>
 			) : (
 				<ErrorComponent />
