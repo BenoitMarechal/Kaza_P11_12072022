@@ -14,7 +14,7 @@ const Logding = () => {
 		<div className='page'>
 			<Header />
 			{found ? (
-				<div className='lodging container'>
+				<div className='lodging container prim-on-sec'>
 					{found.pictures ? <Carroussel {...found} /> : <h2>pas de photos</h2>}
 					<Description {...found} />
 				</div>

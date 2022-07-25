@@ -11,9 +11,6 @@ const Nav = () => {
 				<li className='header__nav__ul__li'>
 					<NavLink to='/about'>A propos</NavLink>
 				</li>
-				<li className='header__nav__ul__li'>
-					<NavLink to='/kjhkjh'>404</NavLink>
-				</li>
 			</ul>
 		</nav>
 	);

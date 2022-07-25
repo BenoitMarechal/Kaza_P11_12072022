@@ -1,5 +1,6 @@
 import React from 'react';
 import DropDown from './DropDown';
+import HostName from './HostName';
 import StarScale from './StarScale';
 import TagsList from './TagsList';
 //import DropDown from '../Components/DropDown';
@@ -26,10 +27,13 @@ const Description = (props) => {
 					</div>
 				</div>
 				<div className='description__summary__host'>
-					<div className='description__summary__host__name'>
-						{props.host.name}
-					</div>
-					<img src={props.host.picture} alt={props.host.name} />
+					<HostName {...props}></HostName>
+
+					<img
+						className='description__summary__host__profilePic'
+						src={props.host.picture}
+						alt={props.host.name}
+					/>
 				</div>
 			</div>
 			<div className='description__data'>
