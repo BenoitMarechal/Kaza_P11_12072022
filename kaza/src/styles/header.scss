@@ -5,6 +5,9 @@
 	align-items: center;
 	height: $header-height;
 	margin: $body-top $body-sides 0px $body-sides;
+	@include mobile-600 {
+		margin: $body-sides-S $body-sides-S 0px $body-sides-S;
+	}
 
 	&__logo {
 		height: 100%;
@@ -22,6 +25,9 @@
 			&__li {
 				//pour li, voir dans index.scss
 				margin-left: 100px;
+				@include mobile-800 {
+					margin-left: 10px;
+				}
 			}
 		}
 	}

@@ -20,7 +20,6 @@ const About = () => {
 					<DropDown {...object} key={dropDownData.indexOf(object)} />
 				))}
 			</div>
-
 			<Footer />
 		</div>
 	);
