@@ -16,13 +16,7 @@ const Home = () => {
 		<div className='page'>
 			<Header />
 			<div className='home container'>
-				{/* <img src={background__accueil} alt='kjhkjh' /> */}
 				<LandingPic {...landPIcData} />
-
-				{/* {data &&
-					data.map((elt) => {
-						return <div key={elt.id}>{elt.title}</div>;
-					})} */}
 				<section className='lodgingCards'>
 					{data &&
 						data.map((elt) => {

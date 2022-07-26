@@ -12,14 +12,11 @@ const DropDown = (props) => {
 		}
 	}
 
-	//console.log(formatData(props.content));
-
 	const [display, setDisplay] = useState('none');
 	const [isActive, setActive] = useState('false');
 
 	function handleClick() {
 		setActive(!isActive);
-		//console.log('click');
 
 		if (display === 'none') {
 			setDisplay('block');

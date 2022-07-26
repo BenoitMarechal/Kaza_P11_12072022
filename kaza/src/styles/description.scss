@@ -5,24 +5,26 @@
 	&__summary {
 		display: flex;
 		justify-content: space-between;
-		&__left {
-		}
+		margin-bottom: 15px;
+		// &__left {
+		// }
 		&__host {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 
-			&__name {
-				&__first {
-				}
-				&__family {
-				}
-			}
+			// &__name {
+			// 	&__first {
+			// 	}
+			// 	&__family {
+			// 	}
+			// }
 
 			&__profilePic {
 				height: $profilePicDiameter;
 				width: $profilePicDiameter;
 				border-radius: $profilePicDiameter;
+				margin-left: 10px;
 			}
 		}
 	}
@@ -31,6 +33,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		margin-bottom: 15px;
 		&__tags {
 			display: flex;
 			flex-direction: row;
@@ -53,6 +56,16 @@
 		justify-content: space-between;
 		.dropdown {
 			width: 48%;
+			&__title {
+				font-weight: 500;
+				font-size: 18px;
+			}
+
+			&__pannel {
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 142.6%;
+			}
 		}
 	}
 }
