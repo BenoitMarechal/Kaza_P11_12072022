@@ -13,14 +13,18 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		//border: 1px solid green;
-		//margin-bottom: -10px;
+		@include mobile-800 {
+			height: $dropdown-title-height-S;
+		}
 
 		&__title {
 			margin-left: $dropdown-margin;
 			font-family: 'Montserrat';
 			font-weight: 500;
 			font-size: 24px;
+			@include mobile-800 {
+				font-size: 13px;
+			}
 		}
 		&__arrow {
 			margin-right: $dropdown-margin;
@@ -34,16 +38,16 @@
 		padding-top: 15px;
 		padding-left: $dropdown-margin;
 		padding-right: $dropdown-margin;
-		//margin-top: 0px;
-		//padding-top: 30px;
-		//border: 1px solid blue;
 		font-family: 'Montserrat';
 		font-weight: 400;
 		font-size: 24px;
 		line-height: 142.6%;
 		text-justify: distribute;
-		//position: relative;
-		//top: 10px;
+		@include mobile-800 {
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 142.6%;
+		}
 	}
 }
 

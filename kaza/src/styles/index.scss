@@ -29,7 +29,6 @@ body {
 	left: 0;
 	right: 0;
 	margin: 0;
-	//padding: $body-top 0 $body-bottom 0;
 }
 
 section {
@@ -40,26 +39,18 @@ section {
 	flex-direction: column;
 	justify-content: space-between;
 	height: 100%;
-	//border: 1px solid green;
 }
 
 .container {
-	//border: 1px solid orange;
-	//position: absolute;
-	//position: relative;
-	//top: $header-height + $body-top;
-	//bottom: $footer-height;
-	//margin: 0px $body-sides 0px $body-sides;
 	margin-left: $body-sides;
 	margin-right: $body-sides;
-	//left: 0;
-	//right: 0;
-	//height: 100%;
 	height: auto;
-
 	flex-direction: column;
 	display: flex;
 	align-items: center;
+	@include mobile-800 {
+		margin: 0 $body-sides-S;
+	}
 }
 
 #root {

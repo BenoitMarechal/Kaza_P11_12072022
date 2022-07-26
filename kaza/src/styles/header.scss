@@ -5,7 +5,7 @@
 	align-items: center;
 	height: $header-height;
 	margin: $body-top $body-sides 0px $body-sides;
-	@include mobile-600 {
+	@include mobile-800 {
 		margin: $body-sides-S $body-sides-S 0px $body-sides-S;
 	}
 
