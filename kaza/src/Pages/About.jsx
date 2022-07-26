@@ -10,8 +10,6 @@ const landPIcData = {
 	title: '',
 };
 
-// faire un json pour dropDownData
-
 const About = () => {
 	return (
 		<div className='page'>
