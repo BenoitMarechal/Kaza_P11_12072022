@@ -1,5 +1,4 @@
 .error {
-	//margin-top: -50px;
 	@include prim-on-sec;
 	&__h1 {
 		font-style: normal;
@@ -7,11 +6,10 @@
 		font-size: 288px;
 		line-height: 142.6%;
 		margin: 0;
-		//position: relative;
-		//top: 50%;
-		//bottom: 50%;
-
-		// /* or 411px */
+		@include mobile-800 {
+			font-weight: 700;
+			font-size: 96px;
+		}
 	}
 
 	&__p {
@@ -20,6 +18,10 @@
 		font-size: 36px;
 		line-height: 142.6%;
 		text-align: center;
+		@include mobile-800 {
+			font-weight: 500;
+			font-size: 18px;
+		}
 	}
 
 	&__link {
@@ -28,5 +30,9 @@
 		font-weight: 500;
 		font-size: 18px;
 		line-height: 142.6%;
+		@include mobile-800 {
+			font-weight: 500;
+			font-size: 14px;
+		}
 	}
 }
