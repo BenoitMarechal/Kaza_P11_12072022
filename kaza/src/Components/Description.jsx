@@ -38,10 +38,7 @@ const Description = (props) => {
 							alt={props.host.name}
 						/>
 					</div>
-
-					<div className='description__summary__right__rating'>
-						<StarScale {...props}></StarScale>
-					</div>
+					<StarScale {...props}></StarScale>
 				</div>
 			</div>
 

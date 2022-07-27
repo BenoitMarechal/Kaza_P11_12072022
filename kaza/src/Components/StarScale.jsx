@@ -7,21 +7,21 @@ const StarScale = (props) => {
 	let rating = props.rating;
 
 	return (
-		<div className='description__summary__right__rating__stars'>
+		<div className='description__summary__right__rating'>
 			{range.map((rangeElement) =>
 				rating >= rangeElement ? (
 					<img
 						key={'star-Full' + rangeElement.toString()}
 						src={startFull}
 						alt='Star--full'
-						className='description__summary__right__rating__stars__star'
+						className='description__summary__right__rating__star'
 					/>
 				) : (
 					<img
 						key={'star-Empty' + rangeElement.toString()}
 						src={starEmpty}
 						alt='Star--full'
-						className='description__summary__right__rating__stars__star'
+						className='description__summary__right__rating__star'
 					/>
 				)
 			)}
