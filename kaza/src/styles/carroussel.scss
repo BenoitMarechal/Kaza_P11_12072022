@@ -1,6 +1,4 @@
 .carroussel {
-	//display: flex;
-	//align-items: center;
 	width: 100%;
 	display: flex;
 
@@ -9,10 +7,17 @@
 		position: absolute;
 		top: calc(0.64 * $carroussel-height);
 		transform: scale(0.8);
+		@include mobile-800 {
+			top: calc(0.7 * $carroussel-height-S);
+			transform: scale(0.32);
+		}
 	}
 	&__container {
 		height: $carroussel-height;
 		width: 100%;
+		@include mobile-800 {
+			height: $carroussel-height-S;
+		}
 		&__picture {
 			display: none;
 			&__active {
@@ -26,8 +31,14 @@
 }
 #next {
 	right: $carroussel-arrows-margin;
+	@include mobile-800 {
+		right: $carroussel-arrows-margin-S;
+	}
 }
 
 #prev {
 	left: $carroussel-arrows-margin;
+	@include mobile-800 {
+		left: $carroussel-arrows-margin-S;
+	}
 }

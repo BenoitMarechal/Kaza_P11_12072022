@@ -7,9 +7,11 @@ const HostName = (props) => {
 	const familyName = HostNameArray.pop(firstName);
 
 	return (
-		<div className='description__summary__host__name'>
-			<div className='description__summary__host__name__first'>{firstName}</div>
-			<div className='description__summary__host__name__family'>
+		<div className='description__summary__right__host__name'>
+			<div className='description__summary__right__host__name__first'>
+				{firstName}
+			</div>
+			<div className='description__summary__right__host__name__family'>
 				{familyName}
 			</div>
 		</div>

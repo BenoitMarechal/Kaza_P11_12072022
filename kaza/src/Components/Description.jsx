@@ -25,25 +25,26 @@ const Description = (props) => {
 					<div className='description__summary__left__location'>
 						{props.location}
 					</div>
+					<div className='description__summary__left__tags'>
+						<TagsList {...props} />
+					</div>
 				</div>
-				<div className='description__summary__host'>
-					<HostName {...props}></HostName>
+				<div className='description__summary__right'>
+					<div className='description__summary__right__host'>
+						<HostName {...props}></HostName>
+						<img
+							className='description__summary__right__host__profilePic'
+							src={props.host.picture}
+							alt={props.host.name}
+						/>
+					</div>
 
-					<img
-						className='description__summary__host__profilePic'
-						src={props.host.picture}
-						alt={props.host.name}
-					/>
+					<div className='description__summary__right__rating'>
+						<StarScale {...props}></StarScale>
+					</div>
 				</div>
 			</div>
-			<div className='description__data'>
-				<div className='description__data__tags'>
-					<TagsList {...props} />
-				</div>
-				<div className='description__data__stars'>
-					<StarScale {...props}></StarScale>
-				</div>
-			</div>
+
 			<div className='description__info'>
 				{dropDownData.map((object) => (
 					<DropDown
