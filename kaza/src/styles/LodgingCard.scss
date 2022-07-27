@@ -7,6 +7,13 @@
 	border-radius: 25px;
 	padding: 50px;
 	margin-top: 0;
+	@include desktop-1100 {
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+		width: 100%;
+		//background-color: green;
+	}
 }
 .lodgingCard {
 	//border: 1px solid blue;
@@ -15,6 +22,12 @@
 	margin: 2% 3%;
 	display: flex;
 	position: relative;
+	@include mobile-800 {
+		width: 100%;
+		height: $logdingCard-size-S;
+		margin: 3% 0;
+	}
+
 	&__link {
 		width: 100%;
 		height: 100%;
@@ -28,6 +41,9 @@
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
+			@include mobile-800 {
+				//object-fit: contain;
+			}
 		}
 		&__background {
 			position: absolute;
