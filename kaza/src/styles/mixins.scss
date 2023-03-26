@@ -75,11 +75,6 @@
 	@include sec-on-prim();
 }
 
-@mixin prim-on-sec {
-	color: $colour-primary;
-	background-color: $colour-secondary;
-}
-
 @mixin prim-on-grey {
 	color: $colour-primary;
 	background-color: $background-grey;

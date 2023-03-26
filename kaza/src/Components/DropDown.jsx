@@ -17,7 +17,6 @@ const DropDown = (props) => {
 
 	function handleClick() {
 		setActive(!isActive);
-
 		if (display === 'none') {
 			setDisplay('block');
 		} else {
